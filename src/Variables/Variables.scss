@@ -1,0 +1,59 @@
+//colors
+$mainDarkColor: #001f36;
+$mainColor: #5f2cf8;
+$greyColor: #e2e2e2;
+
+//Fonts
+$font: "Inter", sans-serif;
+
+//mixins
+
+@mixin button-primary {
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: center;
+  // align-items: center;
+  padding: 11px 45px;
+
+  // width: 139px;
+  height: 46px;
+
+  background: $mainColor;
+  border-radius: 10px;
+  border: 0px;
+
+  font-family: $font;
+  font-weight: 600;
+  font-size: 20px;
+
+  color: #ffffff;
+}
+
+@mixin button-secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  font-family: $font;
+  font-weight: 500;
+  font-size: 20px;
+
+  color: #ffffff;
+}
+
+@mixin card-secondary {
+  width: auto;
+  max-width: 596px;
+  height: 300px;
+  left: 156px;
+  top: 836px;
+
+  background: #ffffff;
+  border: 1px solid $greyColor;
+  border-radius: 20px;
+
+  margin-top: 45px;
+}

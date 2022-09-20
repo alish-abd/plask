@@ -1,0 +1,482 @@
+@import "../Variables/Variables.scss";
+
+body {
+  margin: 0%;
+  padding: 0%;
+  background-color: #f8fafb;
+}
+
+h1,
+h2,
+h3,
+h4,
+input,
+hr p {
+  margin: 0;
+  padding: 0%;
+}
+
+.home--container {
+  text-align: center;
+  justify-self: center;
+  text-align: start;
+  margin-left: 125px;
+  max-width: 1224px;
+  // margin-left: 9%;
+  // margin-right: 9%;
+  margin-bottom: 50px;
+}
+
+.home--title {
+  font-family: $font;
+  font-weight: 600;
+  font-size: 64px;
+  color: $mainDarkColor;
+  text-align: start;
+  margin-top: 37px;
+}
+
+.home--publications {
+  margin-top: 30px;
+}
+
+.h3-title {
+  font-family: $font;
+  font-weight: 600;
+  font-size: 30px;
+  color: $mainDarkColor;
+  margin-bottom: 30px;
+}
+
+.publication-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.new-publication {
+  width: 282px;
+  height: 180px;
+  background: #ffffff;
+  border: 1px solid $mainColor;
+  border-radius: 20px;
+
+  .title {
+    font-family: $font;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    color: $mainColor;
+  }
+}
+
+.add-button {
+  // position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 117px;
+  top: 49px;
+  font-size: 34px;
+  text-align: center;
+  color: $mainColor;
+  background-color: #ffffff;
+  border: 3px solid $mainColor;
+  border-radius: 16000px;
+  margin: 49px 117px 0px;
+}
+
+.publication-item {
+  width: 282px;
+  height: 180px;
+  background: #ffffff;
+  border: 1px solid $greyColor;
+  border-radius: 20px;
+}
+.publication-item-img {
+  width: 282px;
+  height: 100px;
+  background: url();
+  border-radius: 20px 20px 0px 0px;
+  border: 0px;
+  object-fit: cover;
+}
+
+.publication-item-title {
+  color: $mainDarkColor;
+  font-family: $font;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 10px 20px 10px;
+}
+
+.publication-item-button {
+  color: $mainColor;
+  font-family: $font;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 11px 20px;
+}
+
+.home--performance {
+  margin-top: 45px;
+}
+
+.title-and-button {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.common--h3-title {
+  font-family: $font;
+  font-weight: 600;
+  font-size: 30px;
+  color: $mainDarkColor;
+}
+
+.performance--add-button {
+  display: none;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  text-align: center;
+  color: $mainColor;
+  background-color: #ffffff;
+  border: 3px solid $mainColor;
+  border-radius: 16000px;
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+.performance-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.performance-item {
+  width: 282px;
+  height: 180px;
+
+  background: linear-gradient(146.59deg, #ff7ccd 0%, #ff34b1 111.41%);
+  border-radius: 20px;
+
+  padding-top: 25px;
+  // padding-left: 30px;
+}
+
+.performance-item-content {
+  margin-left: 30px;
+}
+
+.performance-item-stopwatch {
+  font-family: $font;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 58px;
+
+  color: #ffffff;
+
+  margin-bottom: 0px;
+}
+
+.performance-item-title-input {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: $font;
+  font-weight: 300;
+  font-size: 25px;
+  max-width: 205px;
+  height: 35px;
+  // left: 30px;
+  top: 108px;
+
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+
+.performance-item-title {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: $font;
+  font-weight: 300;
+  font-size: 25px;
+  max-width: 205px;
+  margin-bottom: 15px;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+
+.performance--button-start {
+  @include button-secondary;
+  padding: 0 25px;
+}
+.performance--button-reset {
+  @include button-secondary;
+  padding: 0 8px;
+}
+.performance--button-delete {
+  @include button-secondary;
+  padding: 0 8px;
+}
+
+//todo and pomodoro container
+
+.todo-pomodoro-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: auto;
+  max-width: 1224px;
+}
+
+.todo {
+  @include card-secondary;
+  height: auto;
+}
+
+.todo-content {
+  margin: 30px;
+}
+
+.todo--title-and-buttons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  width: 532px;
+  max-height: 36px;
+}
+
+.todo--teritary-button {
+  font-family: $font;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  // display: flex;
+  margin-left: auto;
+
+  color: $mainColor;
+}
+
+.divider-line {
+  width: 532px;
+  // top: 85px;
+  border: 1px solid $greyColor;
+  margin-bottom: 20px;
+  text-align: start;
+}
+
+.todo--items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.todo-form {
+  display: flex;
+  gap: 10px;
+}
+
+.todo-input {
+  width: 420px;
+  height: 46px;
+  // left: 30px;
+  // top: 103px;
+  padding-left: 10px;
+  margin-bottom: 25px;
+
+  color: $mainDarkColor;
+
+  background: rgba(95, 44, 248, 0.02);
+  border: 1px solid $mainColor;
+  border-radius: 10px;
+
+  font-family: $font;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.todo-button {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // padding: 11px 25px;
+  width: 90px;
+  height: 48px;
+  color: #fff;
+
+  background: $mainColor;
+  border-radius: 10px;
+  border: 1px solid $mainColor;
+
+  font-family: $font;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.todo--item {
+  display: flex;
+  // flex-wrap: wrap;
+  // align-items: center;
+  gap: 15px;
+  width: 536px;
+}
+
+.todo-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+  width: 532px;
+}
+
+.todo-item-input {
+  border: 0px;
+  font-family: $font;
+  font-weight: 400;
+  font-size: 20px;
+  color: $mainDarkColor;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.todo--box {
+  display: flex;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0%;
+  border: 2px solid $mainDarkColor;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.todo--box-completed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 2px solid $mainColor;
+  border-radius: 5px;
+
+  background-color: $mainColor;
+}
+
+.complete {
+  font-family: $font;
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration-line: line-through;
+
+  color: #a4a8b4;
+}
+.todo--item-name {
+  font-family: $font;
+  font-weight: 400;
+  font-size: 20px;
+
+  color: $mainDarkColor;
+}
+
+.todo-delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 0px;
+  border-radius: 5px;
+  margin-left: auto;
+
+  background-color: #fff;
+}
+
+.pomodoro {
+  @include card-secondary;
+}
+
+.pomodoro-content {
+  margin: 30px;
+}
+
+.pomodoro--title-and-buttons {
+  display: flex;
+  align-items: center;
+  width: 532px;
+  max-height: 36px;
+}
+
+.pomodoro--teritary-button {
+  font-family: $font;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  // display: flex;
+  margin-left: auto;
+
+  color: $mainColor;
+}
+
+.pomodoro--timer {
+  display: flex;
+  font-family: $font;
+  font-weight: 600;
+  font-size: 85px;
+  line-height: 103px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pomodoro--buttons-row {
+  // display: flex;
+  // flex-wrap: wrap;
+  // gap: 20px;
+}
+.pomodoro--button {
+  @include button-primary;
+  margin: 25px auto;
+}
+
+.pomodoro--button-settings {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  gap: 10px;
+
+  background: $mainColor;
+  border-radius: 10px;
+  border: 0px;
+}
+
+//pomodoro styles
+
+.pomodoro-setting-slider {
+  height: 40px;
+  border: 2px solid red;
+  border-radius: 20px;
+}
+
+.thumb {
+  background-color: red;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.pomodoro-setting-slider.green {
+  border: 2px solid green;
+}
+
+.pomodoro-setting-slider.green .thumb {
+  background-color: green;
+}
